@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.root {
+  min-height: 100vh;
+}
+
+:root {
+  --color-primary: #07575b;
+  --color-second: #c4dfe6;
+  --color-third: #66a5ad;
+  --color-gray-100: hsl(220, 20%, 10%, 5%);
+  --color-gray-200: hsl(220, 20%, 10%, 10%);
+  --color-gray-300: hsl(220, 20%, 10%, 25%);
+  --color-gray-500: hsl(220, 20%, 10%, 50%);
+  --color-gray-700: #252542;
+  --color-gray-900: #0c0c22;
+
+  --transition: all 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.text-1 {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+section {
+  margin-top: 6rem;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-image: url(./images/Background2.png);
+  background-size: cover;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-third);
+}
+
+.formStyle {
+  background-color: var(--color-second);
+}
+
+.form__error-message {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.btn-style {
+  background-color: var(--color-primary);
+  color: var(--color-second);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 20;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-login {
+  background-color: var(--color-primary);
+  color: var(--color-second);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 10rem;
+
+  font-size: 20;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-style.danger {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-style.view {
+  background-color: var(--color-third);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-style.main {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn.category {
+  background: var(--color-primary);
+  color: var(--color-second);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.btn-style:hover {
+  background-color: var(--color-primary);
+  color: var(--color-second);
+}
+
+img {
+  display: black;
+  object-fit: cover;
+  width: 100%;
+}
+
+.underline {
+  height: 07px;
+  width: 10 rem;
+  background-color: var(--color-primary);
+  margin-top: 10px;
+  margin-bottom: 10;
+}
+
+.underline-write {
+  height: 04px;
+  width: 10 rem;
+  background-color: var(--color-primary);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.underline-blog {
+  height: 02px;
+  width: 10 rem;
+  background-color: var(--color-primary);
+  margin-top: 10px;
+  margin-bottom: 10;
+}
+
+/* ======================= NavBar ======================= */
+#nav-div span {
+  color: var(--color-second);
+}
+
+/* ======================= footer ======================= */
+
+.footer_section {
+  background-color: var(--color-primary);
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_container {
+  color: var(--color-second);
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer_list:hover {
+  background-color: var(--color-second);
+  color: var(--color-primary);
+}
+.line-between {
+  height: 1.5rem;
+  width: 3px;
+  background-color: var(--color-second);
+}
+/* ---------------------- Home ----------------------*/
+.blog {
+  background-color: var(--color-second);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.blog:hover {
+  box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.blog_cover {
+  overflow: hidden;
+  height: 16rem;
+}
+
+.blog_content {
+  color: var(--color-primary);
+}
+
+.blog_footer {
+}
+
+.blog_author {
+  gap: 1rem;
+}
+
+.blog-author-avatar {
+  width: 4rem;
+  overflow: hidden;
+}
+
+/* ======================= authors ======================= */
+.authors_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.author {
+  background-color: var(--color-second);
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.author_avatar {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.3rem solid var(--color-second);
+  overflow: hidden;
+}
+
+.authors a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+/* ======================= BlogDetails ======================= */
+
+.blog_details {
+  width: 60%;
+  background-color: var(--color-second);
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.Blog_details_cover {
+  margin-inline: auto;
+}
+
+.blog_detail_buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Blog_details_cover {
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30rems;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* ======================= Pagination ======================= */
+.pagination .page-item .page-link {
+  border-color: var(--color-primary);
+  background-color: #c4dfe6;
+  color: var(--color-primary);
+}
+.pagination .page-item .page-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+.pagination .page-item.active .page-link {
+  background-color: #4a8991;
+  color: black;
+  border-color: black;
+}
+
+/* ======================= TextEditor ======================= */
+.editor-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.editor {
+  min-height: 200px;
+  cursor: text;
+}
+
+.editor img {
+  max-width: 100%;
+}
+
+/* ---------------------- contact us  ----------------------*/
+.card-body {
+  background-color: #c4dfe6;
+  border-color: #66a5ad;
+  flex: 1;
+  padding: 1rem;
+}
+
+/* ---------------------- Register  ----------------------*/
+.registerPage {
+}
+/* ---------------------- Login  ----------------------*/
+
+/* ---------------------- profile  ----------------------*/
+.profile__container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.profile__details {
+  width: 70%;
+}
+
+.avatar__wrapper {
+  width: 15rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.profile__avatar {
+  height: 100%;
+  border-radius: 50%;
+  border: 1rem solid var(--color-white);
+  overflow: hidden;
+}
+
+.avatar__- {
+  height: 1rem;
+}
+
+.avatar__form input {
+  visibility: hidden;
+}
+
+.avatar__form label,
+.profile__avatar-btn {
+  background: var(--color-gray-900);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 1.4rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.profile__avatar-btn {
+  cursor: pointer;
+  font-size: 2rem;
+  background: var(--color-primary);
+}
+
+.profile__details h1 {
+  margin-top: 1.5rem;
+}
+
+.form.profile__form {
+  margin-top: 3rem;
+  margin-inline: auto;
+  width: var(--form-width);
+}
+/* ---------------------- Dashboard Page ----------------------*/
+
+.dashboard__post {
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 0.5rem 1.2rem;
+}
+
+.dashboard__post-info {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.dashboard__post-thumbnail {
+  width: 4rem;
+
+  overflow: hidden;
+}
+
+.dashboard__post-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.dashboard__post-thumbnail {
+  width: 5rem;
+}
+
+/* // import TextEditor from "../components/TextEditor";
+
+// export default function CreatePost() {
+//   return (
+//     <div>
+//       <section className="section ">
+//         <div className="container">
+//           <div className="col-md-12 md-4 mt-4 text-center">
+//             <h1 className="main-heading fs-1">Create Blog</h1>
+//             <div className="underline mx-auto rounded-3"> </div>
+//             <div className="container mt-3">
+//               <h2>Create a New Blog Post</h2>
+//               <p className="fs-5"> share your story with other people </p>
+
+//               <form>
+//                 <label htmlFor="postTitle" className="form-label fs-5">
+//                   Post Title
+//                 </label>
+//                 <input
+//                   type="text"
+//                   className="form-control"
+//                   id="postTitle"
+//                   placeholder="Enter Blogtitle"
+//                 />
+
+//                 <label htmlFor="postContent" className="form-label mt-2 fs-5">
+//                   Post Content
+//                 </label>
+
+//                 <TextEditor />
+
+//                 <button
+//                   className="button-style mt-4 mb-4 rounded fs-5"
+//                   style={{ height: "40px", width: "100%" }}
+//                 >
+//                   Submit Blog
+//                 </button>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// } */

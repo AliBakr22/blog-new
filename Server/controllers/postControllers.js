@@ -228,11 +228,11 @@ const removePost = async (req, res, next) => {
 };
 
 module.exports = {
-  getPosts,
+  getPosts, 
   getPost,
   getCatPosts,
   getUserPosts,
   createPost,
-  editPost,
-  removePost,
+  editPost, 
+  removePost, 
 };
